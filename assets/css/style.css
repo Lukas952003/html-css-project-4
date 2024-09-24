@@ -4,9 +4,18 @@
 html {
   font-size: 62.5%;
 }
+
+/* Common - Phần chung */
+:root {
+  --primary-color: #000958;
+}
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1,
@@ -24,4 +33,82 @@ select,
 button {
   font-size: inherit;
   font-family: inherit;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+body {
+  background-image: url("https://www.ngoisaoso.vn/uploads/news/2015/03/19/Best-Website-Background-Images14.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn {
+  --height: 56px;
+
+  display: inline-block;
+  min-width: 130px;
+  height: var(--height);
+  line-height: var(--height);
+  border-radius: 99px;
+  border: 1px solid #000958b8;
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* Header */
+header {
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 1px;
+}
+
+.header__inner {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.navbar__link {
+  color: #5e6085;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 8px 18px;
+  transition: all 0.4s;
+}
+
+.navbar__link:hover {
+  color: #000958;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.header-action a:hover {
+  color: palegreen;
+}
+
+.header-action__link {
+  color: #5e6085;
 }
