@@ -3,6 +3,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* Common - Phần chung */
@@ -579,6 +580,147 @@ header {
   width: 86px;
   height: 1.5px;
 }
+
+/* SERVICE */
+.service {
+  background: #fff6ed;
+  margin-left: 50px;
+  padding-bottom: 100px;
+}
+
+.service__desc {
+  padding-top: 68px;
+  color: #5e6085;
+  text-align: center;
+  font-family: Sora;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.section__heading {
+  color: #000958;
+  text-align: center;
+  font-family: Sora;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 71px;
+}
+
+.service__inner {
+  display: grid;
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "tt1 img tt2"
+    "tt3 img tt4"
+    "tt5 img tt6";
+  /* align-items: center; */
+  justify-content: center;
+  row-gap: 24px;
+}
+
+.service__task {
+  margin-top: 17px;
+  display: inline-block;
+  width: 294px;
+  height: 208px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 188, 122, 0.26);
+  background: #fff;
+  padding: 30px;
+}
+
+.service__task-title {
+  position: relative;
+  color: #000958;
+  font-family: Sora;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.service__task-title::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 22px;
+  background: linear-gradient(90deg, #ff5b2e 0.39%, #ffa187 100.29%);
+  left: -12px;
+}
+
+.service__task-desc {
+  color: #656689;
+  font-family: Poppins;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.service__task-readmore {
+  color: #34396a;
+  font-family: Sora;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.service__task-01 {
+  grid-area: tt1;
+}
+
+.service__task-02 {
+  grid-area: tt2;
+}
+
+.service__task-03 {
+  grid-area: tt3;
+}
+
+.service__task-04 {
+  grid-area: tt4;
+}
+
+.service__task-05 {
+  grid-area: tt5;
+}
+
+.service__task-06 {
+  grid-area: tt6;
+}
+
+.service__pic {
+  width: 447px;
+  height: 621px;
+}
+
+.service__button {
+  border-radius: 31px;
+  border: 1px solid #ff5b2e;
+  opacity: 0.6;
+  box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+  max-width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ff5b2e;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 20px 40px;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.service__button:hover {
+  color: #000958;
+  border: 1px solid #000958;
+}
+
 /* ================================================================================= */
 /*===================================== Amination =================================== */
 
