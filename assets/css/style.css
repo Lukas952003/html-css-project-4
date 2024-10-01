@@ -620,6 +620,7 @@ header {
   /* align-items: center; */
   justify-content: center;
   row-gap: 24px;
+  column-gap: 71px;
 }
 
 .service__task {
@@ -719,6 +720,84 @@ header {
 .service__button:hover {
   color: #000958;
   border: 1px solid #000958;
+}
+
+/* Rates - Đánh giá */
+.rates__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 37px;
+}
+
+.rate__item-wrap-01,
+.rate__item-wrap-02,
+.rate__item-wrap-03,
+.rate__item-wrap-04 {
+  position: relative;
+  border-radius: 130px;
+  overflow: hidden;
+  margin: 0 16px;
+}
+
+.rate__item-wrap-01::before,
+.rate__item-wrap-02::before,
+.rate__item-wrap-03::before,
+.rate__item-wrap-04::before {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width: 100%;
+  height: 266px;
+  border-radius: 130px;
+  z-index: -1;
+}
+
+.rate__item-wrap-01::before {
+  background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.rate__item-wrap-02::before {
+  background: #ff997e;
+}
+
+.rate__item-wrap-03::before {
+  background: #fabf3e;
+}
+
+.rate__item-wrap-04::before {
+  background: #5bd6e2;
+}
+.rates__decor {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+.rates__desc,
+.rates__name {
+  text-align: center;
+}
+
+.rates__desc {
+  margin-top: 29px;
+}
+
+.rates__name {
+  margin-top: 14px;
+  color: #000958;
+  text-align: center;
+  font-family: Sora;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.rates__button {
+  margin-top: 55px;
+  text-align: center;
+  padding-bottom: 130px;
 }
 
 /* ================================================================================= */

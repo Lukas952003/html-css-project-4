@@ -97,7 +97,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body style="height: 3000px" id="bd">
+  <body id="bd">
     <!-- Header -->
     <header class="header">
       <div class="container">
@@ -228,7 +228,7 @@
     </section>
 
     <!-- ABOUT -->
-    <main>
+    <main style="height: 3000px">
       <!-- Nội dung chính của trang, nên dùng thẻ main-->
       <section class="about" id="about">
         <div class="container">
@@ -366,7 +366,7 @@
       </section>
       <div class="distance" style="height: 200px"></div>
       <!-- Serrvice  -->
-      <section class="service">
+      <section class="service" id="service">
         <div class="container">
           <h4 class="service__desc">What we do for you?</h4>
           <h2 class="section__heading">Our Services</h2>
@@ -380,7 +380,11 @@
               <a href="Read More" class="service__task-readmore">Read More</a>
             </section>
             <div class="service__img">
-              <img src="./assets/img/dog.png" alt="" class="service__pic" />
+              <img
+                src="./assets/img/service-01.png"
+                alt=""
+                class="service__pic"
+              />
             </div>
 
             <section class="service__task service__task-02">
@@ -429,6 +433,73 @@
             </section>
           </section>
           <div class="service__button">View All Services</div>
+        </div>
+      </section>
+
+      <!-- Rates - Đánh giá -->
+      <section class="rates">
+        <div class="container">
+          <div class="rates__inner">
+            <h4 class="rates__desc service__desc">Pet Care Staff</h4>
+            <h2 class="rates__heading section__heading">Meet Our Groomers</h2>
+            <div class="rates__list">
+              <article class="rates__item rates__item-01">
+                <figure class="rate__item-wrap-01">
+                  <img
+                    src="./assets/img/rates_01.png"
+                    alt=""
+                    class="rates__img"
+                  />
+                  <img
+                    src="./assets/img/rates_decor-01.svg"
+                    alt=""
+                    class="rates__decor"
+                  />
+                </figure>
+                <p class="rates__desc">Pet Trainer</p>
+                <h5 class="rates__name">Meghan Samit</h5>
+              </article>
+
+              <article class="rates__item rates__item-02">
+                <figure class="rate__item-wrap-02">
+                  <img
+                    src="./assets/img/rates_02.png"
+                    alt=""
+                    class="rates__img"
+                  />
+                </figure>
+                <p class="rates__desc">Pet Trainer</p>
+                <h5 class="rates__name">Meghan Samit</h5>
+              </article>
+
+              <article class="rates__item rates__item-03">
+                <figure class="rate__item-wrap-03">
+                  <img
+                    src="./assets/img/rates_03.png"
+                    alt=""
+                    class="rates__img"
+                  />
+                </figure>
+                <p class="rates__desc">Pet Trainer</p>
+                <h5 class="rates__name">Meghan Samit</h5>
+              </article>
+
+              <article class="rates__item rates__item-04">
+                <figure class="rate__item-wrap-04">
+                  <img
+                    src="./assets/img/rates_04.png"
+                    alt=""
+                    class="rates__img"
+                  />
+                </figure>
+                <p class="rates__desc">Pet Trainer</p>
+                <h5 class="rates__name">Meghan Samit</h5>
+              </article>
+            </div>
+            <div class="rates__button">
+              <a href="View All Team" class="service__button">View All Team</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
