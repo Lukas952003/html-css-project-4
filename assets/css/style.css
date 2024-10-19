@@ -92,13 +92,6 @@ body {
 }
 
 /* Header */
-header {
-  background-color: rgb(255 255 255 / 30%);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 1px;
-  z-index: 999;
-}
 
 .header__inner {
   margin-top: 40px;

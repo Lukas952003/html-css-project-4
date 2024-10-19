@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucy - Established & Trusted Pet Care Service</title>
 
     <!-- Reset CSS -->
@@ -100,12 +101,30 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/responsive.css
+    "
+    />
   </head>
-  <body id="bd">
+  <body>
     <!-- Header -->
     <header class="header">
       <div class="container">
         <div class="header__inner">
+          <nav class="nav-tablet-mobile">
+            <label for="menu-checkbox" class="toggle-menu"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="menu_mbtb"
+                fill="currentColor"
+              >
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                /></svg
+            ></label>
+          </nav>
           <!-- logo -->
 
           <img src="./assets/img/Logo.svg" alt="Logo" />
@@ -145,6 +164,45 @@
       </div>
     </header>
 
+    <!-- Header Tablet / Mobile -->
+    <header class="mobile-header">
+      <input
+        type="checkbox"
+        name=""
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+      <label for="menu-checkbox" class="menu-overlay"></label>
+      <!-- Menu content -->
+      <div class="menu-drawer">
+        <div class="Logo-tabmb"><img src="./assets/img/Logo.svg" alt="" /></div>
+
+        <!-- navbar -->
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__link">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__link">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#service" class="navbar__link">Services & Rates</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#reviews" class="navbar__link">Reviews</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contact" class="navbar__link">Contacts us</a>
+          </li>
+        </ul>
+        <!-- header action -->
+        <div class="header-action">
+          <a href="#!" class="header-action__link">Sign in</a>
+          <a href="#!" class="header-action__btn btn">Sign up</a>
+        </div>
+      </div>
+    </header>
     <!-- HERO -->
     <section class="hero">
       <div class="container">
@@ -240,7 +298,7 @@
     <!-- ABOUT -->
     <main>
       <!-- Nội dung chính của trang, nên dùng thẻ main-->
-      <section class="about" id="about">
+      <section class="about" id="about" style="display: none">
         <div class="container">
           <div class="about__inner">
             <section class="about__content">
@@ -398,9 +456,11 @@
           </div>
         </div>
       </section>
-      <div class="distance" style="height: 200px"></div>
+
+      <div class="distance" style="height: 50px"></div>
+
       <!-- Serrvice  -->
-      <section class="service" id="service">
+      <section class="service" id="service" style="display: none">
         <div class="container">
           <h4 class="service__desc">What we do for you?</h4>
           <h2 class="section__heading">Our Services</h2>
@@ -543,7 +603,7 @@
       </section>
 
       <!-- Rates - Đánh giá -->
-      <section class="rates">
+      <section class="rates" style="display: none">
         <div class="container">
           <div class="rates__inner">
             <h4 class="rates__desc service__desc">Pet Care Staff</h4>
@@ -626,7 +686,7 @@
       </section>
 
       <!-- Pricing -->
-      <section class="pricing">
+      <section class="pricing" style="display: none">
         <div class="container">
           <h4 class="pricing__heading">The Best Choice</h4>
           <h2 class="pricing__desc">
@@ -744,7 +804,7 @@
       </section>
 
       <!-- Reviews -->
-      <section class="reviews" id="reviews">
+      <section class="reviews" id="reviews" style="display: none">
         <div class="container">
           <section class="reviews__inner">
             <div class="reviews__button-previous reviews__button">
@@ -752,7 +812,7 @@
             </div>
 
             <!-- Review image -->
-            <div class="reviews__image">
+            <div class="reviews__image" style="display: none">
               <img
                 src="./assets/img/review-01.png"
                 alt="Our Reviews"
@@ -761,7 +821,7 @@
             </div>
 
             <!-- Reviews content -->
-            <section class="reviews__content">
+            <section class="reviews__content" style="display: none">
               <h3 class="section__heading reviews__heading">Our Reviews</h3>
               <p class="reviews__desc">
                 “It was very comforting to recieve a text and pics each day
@@ -782,7 +842,7 @@
           </section>
 
           <!-- Reviews dots -->
-          <div class="reviews__dots">
+          <div class="reviews__dots" style="display: none">
             <div class="reviews__dot reviews__dot--active"></div>
             <div class="reviews__dot"></div>
             <div class="reviews__dot"></div>
@@ -792,7 +852,7 @@
       </section>
 
       <!-- Our Blog -->
-      <section class="blog">
+      <section class="blog" style="display: none">
         <div class="container">
           <div class="blog__inner">
             <section class="blog__header">
@@ -898,7 +958,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer" id="contact">
+    <footer class="footer" id="contact" style="display: none">
       <!-- Footer lefft -->
       <div class="footer__left">
         <div class="footer__header">
