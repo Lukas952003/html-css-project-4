@@ -128,6 +128,54 @@
     justify-content: center;
     gap: 20px;
   }
+
+  .about__img-wrapper {
+    display: none;
+  }
+
+  .about__content:first-child {
+    position: relative;
+  }
+
+  .about__card {
+    /* display: none; */
+    position: absolute;
+    left: 466px;
+    top: -200px;
+  }
+
+  .about {
+    margin-top: 300px;
+    padding-right: 40px;
+  }
+
+  .about__media-bottom {
+    display: none;
+    padding: 0px 20px;
+  }
+
+  .about__inner {
+    /* padding: 20px; */
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  .about__content {
+    position: relative;
+  }
+
+  .about__heading {
+    width: 100%;
+  }
+
+  .tab {
+    padding-right: 20px;
+  }
+
+  .section-desc {
+    padding-right: 20px;
+  }
 }
 
 /* Tablet */
@@ -188,6 +236,9 @@
     font-weight: 800;
     letter-spacing: 2px;
   }
+  .section-heading {
+    font-size: 4.7rem;
+  }
 
   .header-action__btn {
     border: none;
@@ -204,5 +255,26 @@
     display: inline-block;
     width: 258px;
     height: 325px;
+  }
+
+  .hero__list {
+    top: -54px;
+    left: -125px;
+  }
+
+  .hero__container-btn {
+    margin-top: 30px;
+    margin-left: 20%;
+  }
+
+  .about__checklist {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__card {
+    position: absolute;
+    left: 165px;
+    top: -275px;
   }
 }
