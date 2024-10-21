@@ -225,6 +225,13 @@
     justify-items: center;
   }
 
+  .header {
+    position: sticky;
+    top: 3px;
+    background-color: rgb(255 246 237 / 20%);
+    backdrop-filter: blur(10px);
+  }
+
   /* ==================== TABLET-Mobile============ */
 }
 
@@ -400,10 +407,11 @@
     grid-template-columns: 1fr; */
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
   }
 
   .pricing__item {
-    flex-grow: 1;
+    flex-grow: 0.5;
     flex-basis: 200px;
     flex-shrink: 0;
   }
@@ -412,5 +420,9 @@
     position: absolute;
     top: 20px;
     left: 360px;
+  }
+
+  .header {
+    width: 500px;
   }
 }

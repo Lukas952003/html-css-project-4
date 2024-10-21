@@ -845,6 +845,7 @@ body {
   z-index: 5;
   user-select: none;
   cursor: pointer;
+  z-index: 0;
 }
 
 .pricing__switch-label::before {
