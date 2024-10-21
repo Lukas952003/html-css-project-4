@@ -342,6 +342,10 @@
   }
 
   .hero__container-btn {
+    transform: translate(-10%, 0);
+  }
+
+  .hero__container-btn {
     margin-top: 30px;
     margin-left: 20%;
   }
