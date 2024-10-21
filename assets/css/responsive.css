@@ -10,6 +10,10 @@
   .menu-drawer {
     display: none;
   }
+
+  .service {
+    margin-top: 200px;
+  }
 }
 
 /* Tablet & Mobile */
@@ -176,6 +180,25 @@
   .section-desc {
     padding-right: 20px;
   }
+
+  .service__img {
+    display: none;
+  }
+
+  .service__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "tt1 tt2"
+      "tt3 tt4"
+      "tt5 tt6";
+    justify-items: center;
+  }
+
+  .service__button {
+    margin-top: 80px;
+  }
+  /* ==================== TABLET-Mobile============ */
 }
 
 /* Tablet */
@@ -186,6 +209,10 @@
 
   .menu-drawer {
     right: 50%;
+  }
+
+  .service {
+    margin-top: 100px;
   }
 }
 
@@ -276,5 +303,17 @@
     position: absolute;
     left: 165px;
     top: -275px;
+  }
+
+  .service__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service {
+    margin-top: 100px;
+    width: 500px;
   }
 }
