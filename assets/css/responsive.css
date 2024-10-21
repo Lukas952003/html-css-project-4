@@ -215,6 +215,16 @@
     font-size: 4.2rem;
   }
 
+  .pricing {
+    width: 100%;
+  }
+
+  .pricing__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
   /* ==================== TABLET-Mobile============ */
 }
 
@@ -246,6 +256,12 @@
 
   .hero__desc {
     font-size: 2.4rem;
+  }
+
+  .pricing__sale-0ff {
+    position: absolute;
+    top: 0;
+    left: 500px;
   }
 }
 
@@ -365,5 +381,32 @@
 
   .rates__button {
     margin-top: 80px;
+  }
+
+  .pricing {
+    width: 500px;
+  }
+
+  .pricing__desc {
+    width: auto;
+  }
+
+  .pricing__list {
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pricing__item {
+    flex-grow: 1;
+    flex-basis: 200px;
+    flex-shrink: 0;
+  }
+
+  .pricing__sale-0ff {
+    position: absolute;
+    top: 20px;
+    left: 360px;
   }
 }
