@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    user-scalable=no"/>
     <title>Lucy - Established & Trusted Pet Care Service</title>
 
     <!-- Reset CSS -->
@@ -383,12 +384,12 @@
               <img
                 src="./assets/img/about-decor-04.svg"
                 alt=""
-                class="about__img-decoration-04"
+                class="about__img-decoration-04 fa-cog fa-spin"
               />
               <img
                 src="./assets/img/about-decor-05.svg"
                 alt=""
-                class="about__img-decoration-05"
+                class="about__img-decoration-05 fa-cog fa-spin"
               />
               <img
                 src="./assets/img/about-decor-06.svg"
@@ -460,8 +461,6 @@
           </div>
         </div>
       </section>
-
-      <!-- <div class="distance" style="height: 200px"></div> -->
 
       <!-- Serrvice  -->
       <section class="service" id="service">
@@ -816,7 +815,7 @@
             </div>
 
             <!-- Review image -->
-            <div class="reviews__image" style="display: none">
+            <div class="reviews__image">
               <img
                 src="./assets/img/review-01.png"
                 alt="Our Reviews"
@@ -825,7 +824,7 @@
             </div>
 
             <!-- Reviews content -->
-            <section class="reviews__content" style="display: none">
+            <section class="reviews__content">
               <h3 class="section__heading reviews__heading">Our Reviews</h3>
               <p class="reviews__desc">
                 “It was very comforting to recieve a text and pics each day
@@ -845,8 +844,21 @@
             </div>
           </section>
 
+          <!-- Review button Tablet/Mobile -->
+          <div class="reviews__button-tabmb">
+            <div class="reviews__button-previous reviews__button">
+              <i class="fa-solid fa-arrow-left reviews__btn"></i>
+            </div>
+            <!-- Reviews button next -->
+            <div class="reviews__button-next reviews__button">
+              <i
+                class="fa-solid fa-arrow-right reviews__btn-next reviews__btn"
+              ></i>
+            </div>
+          </div>
+
           <!-- Reviews dots -->
-          <div class="reviews__dots" style="display: none">
+          <div class="reviews__dots">
             <div class="reviews__dot reviews__dot--active"></div>
             <div class="reviews__dot"></div>
             <div class="reviews__dot"></div>

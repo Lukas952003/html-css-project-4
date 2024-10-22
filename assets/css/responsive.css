@@ -26,9 +26,9 @@
     top: 0;
   }
 
-  marquee {
+  /* marquee {
     display: none;
-  }
+  } */
 
   .navbar {
     display: none;
@@ -150,7 +150,7 @@
 
   .about {
     margin-top: 300px;
-    padding-right: 40px;
+    /* padding-right: 40px; */
   }
 
   .about__media-bottom {
@@ -169,16 +169,15 @@
     position: relative;
   }
 
-  .about__heading {
-    width: 100%;
-  }
-
   .tab {
     padding-right: 20px;
   }
 
-  .section-desc {
-    padding-right: 20px;
+  .section-desc,
+  .about__desc,
+  .hero__desc,
+  .tab__content-desc {
+    max-width: none;
   }
 
   .service__img {
@@ -216,7 +215,7 @@
   }
 
   .pricing {
-    width: 100%;
+    /* width: 100%; */
   }
 
   .pricing__list {
@@ -232,6 +231,37 @@
     backdrop-filter: blur(10px);
   }
 
+  .container {
+    width: 100%;
+  }
+
+  .pricing__list-small-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .reviews__image {
+    display: none;
+  }
+  .reviews__writter {
+    margin-left: 30px;
+  }
+
+  .reviews__button-tabmb {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+  }
+
+  .reviews .reviews__inner .reviews__button {
+    display: none;
+  }
+
+  .reviews__desc {
+    text-align: left;
+  }
   /* ==================== TABLET-Mobile============ */
 }
 
@@ -270,12 +300,20 @@
     top: 0;
     left: 500px;
   }
+
+  .about__label {
+    margin-top: 100px;
+  }
 }
 
 /* Mobile */
 @media screen and (max-width: 767.98px) {
   .header .header-action {
     display: none;
+  }
+
+  main {
+    width: 100%;
   }
 
   .menu-drawer {
@@ -319,8 +357,28 @@
     font-weight: 800;
     letter-spacing: 2px;
   }
+
   .section-heading {
     font-size: 4.7rem;
+  }
+
+  .about__heading-bottom,
+  .tab__list,
+  .about__heading {
+    max-width: 380px;
+  }
+
+  .tab__list {
+    gap: 10px;
+  }
+
+  .tab__item {
+    gap: 3px;
+    font-size: 1.6rem;
+  }
+
+  .tab__list::after {
+    width: 370px;
   }
 
   .header-action__btn {
@@ -328,9 +386,6 @@
     text-align: left;
     margin-top: -20px;
     font-weight: normal;
-  }
-  .hero {
-    width: 500px;
   }
 
   .hero__inner {
@@ -364,8 +419,9 @@
 
   .about__card {
     position: absolute;
-    left: 165px;
+    left: 120px;
     top: -275px;
+    scale: 0.8;
   }
 
   .service__inner {
@@ -377,11 +433,6 @@
 
   .service {
     margin-top: 100px;
-    width: 500px;
-  }
-
-  .rates {
-    width: 500px;
   }
 
   .rates__list {
@@ -394,10 +445,6 @@
     margin-top: 80px;
   }
 
-  .pricing {
-    width: 500px;
-  }
-
   .pricing__desc {
     width: auto;
   }
@@ -407,22 +454,20 @@
     grid-template-columns: 1fr; */
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 6px;
+    /* width: 500px; */
   }
 
   .pricing__item {
     flex-grow: 0.5;
-    flex-basis: 200px;
+    flex-basis: 180px;
     flex-shrink: 0;
   }
 
   .pricing__sale-0ff {
     position: absolute;
-    top: 20px;
-    left: 360px;
-  }
-
-  .header {
-    width: 500px;
+    top: -45px;
+    left: 285px;
+    scale: 0.8;
   }
 }
