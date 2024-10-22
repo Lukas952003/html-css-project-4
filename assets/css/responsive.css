@@ -532,6 +532,11 @@
     margin-top: 0px;
   }
 
+  .footer__button-submit {
+    bottom: 15px;
+    right: 0;
+  }
+
   .footer__mark {
     text-align: left;
     margin-left: -90px;
