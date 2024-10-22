@@ -335,6 +335,11 @@
   .about__label {
     margin-top: 100px;
   }
+
+  .footer__button-submit {
+    bottom: 15px;
+    left: 230px;
+  }
 }
 
 /* Mobile */
@@ -511,7 +516,7 @@
   }
 
   .footer__left {
-    padding: 114px 100px;
+    padding: 114px 50px;
   }
 
   .footer__right {
